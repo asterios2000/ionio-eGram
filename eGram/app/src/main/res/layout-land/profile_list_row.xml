@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="85dp"
+    android:padding="6dip"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <ImageView
+        android:id="@+id/profileicon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dip"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_profile" />
+
+    <TextView
+        android:id="@+id/profilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/profileicon"
+        android:text="Profile Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/AEM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Π2011059"
+        android:textSize="13sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/profilename"
+        android:layout_alignLeft="@+id/profilename"
+        android:layout_alignStart="@+id/profilename"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@+id/ifDefaultImage"
+        android:layout_toStartOf="@+id/ifDefaultImage" />
+    <TextView
+        android:id="@+id/lastlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Last Login Date"
+        android:textSize="11sp"
+        android:textStyle="italic"
+        android:layout_alignBottom="@+id/ifDefaultImage"
+        android:layout_toRightOf="@+id/profileicon"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/AEM"
+        android:layout_alignRight="@+id/AEM"
+        android:layout_alignEnd="@+id/AEM" />
+
+
+
+    <com.melnykov.fab.FloatingActionButton
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        fab:fab_colorNormal="#e5e6eb"
+
+        android:clickable="false"
+        android:layout_height="wrap_content"
+        android:id="@+id/ifDefaultImage"
+        android:src="@drawable/ic_star"
+        android:focusable="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout> 

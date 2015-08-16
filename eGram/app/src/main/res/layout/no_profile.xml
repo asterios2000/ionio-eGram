@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profileFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/header_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/mat_bg" />
+
+    <LinearLayout
+        android:id="@+id/informations_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/header_imageview"
+        android:gravity="center"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp"
+        android:layout_marginTop="30dp">
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/basic_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_warning"
+                    android:id="@+id/warning_card_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/sp_semester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="@string/noProfileText"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/warning_card_icon"
+                    android:layout_toEndOf="@+id/warning_card_icon" />
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+
+    <!-- cheat code: negative margin -->
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/ic_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/informations_container"
+        android:layout_marginBottom="-50dp" />
+
+    <com.melnykov.fab.FloatingActionButton
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/gotoAddProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/ic_arrow_forward"
+        android:clickable="true"
+        android:cropToPadding="false"
+        fab:fab_colorNormal="#83d0c9"
+        android:layout_below="@+id/informations_container"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

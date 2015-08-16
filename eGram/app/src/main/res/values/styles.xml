@@ -1,0 +1,51 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+
+
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="sv_backgroundColor">@color/egram_green_transparent</item>
+        <item name="sv_showcaseColor">@color/base_color</item>
+        <item name="sv_tintButtonColor">true</item>
+        <item name="sv_titleTextAppearance">@style/ShowCaseTitle</item>
+        <item name="sv_detailTextAppearance">@style/ShowCaseText</item>
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+
+
+    <style name="ShowCaseTitle" parent="TextAppearance.ShowcaseView.Title">
+        <item name="android:textColor">@color/egram_mint</item>
+        <item name="android:textSize">@dimen/showCaseTitleSize</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="ShowCaseText" parent="TextAppearance.ShowcaseView.Title">
+        <item name="android:textColor">@color/list_item_title</item>
+        <item name="android:textSize">@dimen/showCaseMessageSize</item>
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:shadowColor">@color/cardview_dark_background</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">5</item>
+
+    </style>
+
+
+
+
+</resources>

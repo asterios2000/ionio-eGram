@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="145dp"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    tools:context=".MainActivity"
+    android:background="@android:drawable/dialog_holo_light_frame">
+
+
+
+    <ImageView
+        android:id="@+id/informationIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:src="@drawable/ic_card"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="false"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Παναγιώτης Βλάμος"
+        android:id="@+id/infoName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/informationIcon"
+        android:layout_toEndOf="@+id/informationIcon"
+        android:textStyle="bold|italic"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddressLabel"
+        android:layout_below="@+id/infoName"
+        android:layout_alignLeft="@+id/infoName"
+        android:layout_alignStart="@+id/infoName"
+        android:text="@string/StaffAddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoAddress"
+        android:text="Πλατεια παλαιου ψυχειατριου"
+        android:layout_below="@+id/infoName"
+        android:layout_toRightOf="@+id/AddressLabel"
+        android:layout_toEndOf="@+id/AddressLabel"
+        android:paddingLeft="2dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PhoneLabel"
+        android:text="@string/StaffPhone"
+        android:layout_below="@+id/AddressLabel"
+        android:layout_toRightOf="@+id/informationIcon"
+        android:layout_toEndOf="@+id/informationIcon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoPhone"
+        android:text="2661362756"
+        android:paddingLeft="2dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/infoAddress"
+        android:layout_toRightOf="@+id/PhoneLabel"
+        android:layout_toEndOf="@+id/PhoneLabel"
+        android:autoLink="phone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/faxLabel"
+        android:text="@string/StaffFax"
+        android:layout_below="@+id/infoPhone"
+        android:layout_toRightOf="@+id/informationIcon"
+        android:layout_toEndOf="@+id/informationIcon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoFax"
+        android:text="2661362756"
+        android:paddingLeft="2dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/infoPhone"
+        android:layout_alignTop="@+id/faxLabel"
+        android:layout_toRightOf="@+id/faxLabel"
+        android:layout_toEndOf="@+id/faxLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MailLabel"
+        android:text="@string/StaffMail"
+        android:layout_below="@+id/faxLabel"
+        android:layout_toRightOf="@+id/informationIcon"
+        android:layout_toEndOf="@+id/informationIcon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoMail"
+        android:text="as@none.gr"
+        android:paddingLeft="2dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/infoFax"
+        android:layout_toRightOf="@+id/MailLabel"
+        android:layout_toEndOf="@+id/MailLabel"
+        android:autoLink="email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/WebPageLabel"
+        android:text="@string/StaffWebPage"
+        android:layout_below="@+id/MailLabel"
+        android:layout_toRightOf="@+id/informationIcon"
+        android:layout_toEndOf="@+id/informationIcon" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoWebPage"
+        android:text="www.inio.gr"
+        android:paddingLeft="2dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/infoMail"
+        android:layout_toRightOf="@+id/WebPageLabel"
+        android:layout_toEndOf="@+id/WebPageLabel"
+        android:autoLink="web" />
+
+
+</RelativeLayout>

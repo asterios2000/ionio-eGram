@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profileFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       >
+
+    <RelativeLayout
+            android:id="@+id/informations_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/header_imageview"
+            android:gravity="center"
+            android:paddingBottom="10dp">
+
+
+    <ImageView
+        android:id="@+id/header_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bg3" />
+
+        <TextView
+            android:ems="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copiesTitle"
+            android:id="@+id/copiesLabel"
+            android:textSize="17sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/header_imageview"/>
+
+        <TextView
+            android:ems="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/SubjectTitle"
+            android:id="@+id/SubjectLabel"
+            android:textSize="17sp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/copiesLabel"
+            android:layout_toEndOf="@+id/copiesLabel"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:gravity="center" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerCopies"
+            android:layout_below="@+id/SubjectLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/SubjectLabel"
+            android:layout_toStartOf="@+id/SubjectLabel"
+            android:layout_marginLeft="1dp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerSubject"
+            android:layout_alignTop="@+id/spinnerCopies"
+            android:layout_alignLeft="@+id/SubjectLabel"
+            android:layout_alignStart="@+id/SubjectLabel" />
+
+        <EditText
+            android:id="@+id/somethingElse"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:singleLine="false"
+            android:hint="@string/somethingElseTitle"
+            android:lines="2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spinnerCopies"
+            android:maxLines="2"
+            android:imeOptions="actionDone"
+            android:textSize="16sp"
+            android:digits="@string/acceptedChars">
+            <requestFocus />
+        </EditText>
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:singleLine="false"
+            android:hint="@string/notesTitle"
+            android:lines="6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/somethingElse"
+            android:textSize="14sp"
+            android:maxLines="6"
+            android:digits="@string/acceptedChars">
+        </EditText>
+
+
+    <com.melnykov.fab.FloatingActionButton
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/SendApplicationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_done_white_48dp"
+        android:clickable="false"
+        android:cropToPadding="false"
+        fab:fab_colorNormal="#e5e6eb"
+        android:layout_below="@+id/notes"
+        android:layout_centerHorizontal="true" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_applications"
+            android:id="@+id/basic_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+    </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

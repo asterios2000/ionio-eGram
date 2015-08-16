@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    <ImageView
+        android:id="@+id/header_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bg2" />
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/basic_card"
+        android:layout_below="@id/header_imageview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/NameAtGradesHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#007777"
+                android:text="Κομερτζόγλου Αστέριος"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/aemAtGradesHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#007777"
+                android:text="p11kome"
+                android:textSize="14sp"
+                android:layout_below="@+id/NameAtGradesHeader"
+                android:layout_centerHorizontal="true"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/totalDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#36454f"
+                android:text="MO: 7.10  ΔΜ:35  ECTS:270"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/aemAtGradesHeader"
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <ExpandableListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/basic_card"
+        >
+    </ExpandableListView>
+
+</RelativeLayout>

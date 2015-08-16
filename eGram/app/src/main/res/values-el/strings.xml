@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="action_settings">Ρυθμίσεις</string>
+    <string name="action_refresh">Ανανέωση</string>
+
+    <!-- Network Strings -->
+
+    <string name="serverDownTitle">Μη προσβάσιμος εξυπηρετητής</string>
+    <string name="serverDownMsg">Ο εξυπηρετητής του Ιονίου Πανεπιστημίου είναι εκτός λειτουργίας, παρακαλώ προσπαθήστε αργότερα.</string>
+
+    <!-- General Strings -->
+
+    <string name="loadingMessage">Μεταφόρτωση πληροφοριών από το Ιόνιο Πανεπιστήμιο.</string>
+    <string name="loading">Φόρτωση. . .</string>
+    <string name="cancel">Άκυρο</string>
+    <string name="noNetworkTitle">Μη διαθέσιμo διαδίκτυο</string>
+    <string name="noNetworkMsg">Δεν υπάρχει σύνδεση στο διαδίκτυο (Wifi ή 3G).\nΗ ενέργεια αυτή δεν μπορεί να ολοκληρωθεί.</string>
+    <string name="youHave">Έχετε</string>
+    <string name="and">και</string>
+
+
+
+    <!-- Student Page Strings -->
+
+    <string name="studentName">Όνομα</string>
+    <string name="studentSurname">Επώνυμο</string>
+    <string name="studentUsername">Όνομα Χρήστη</string>
+    <string name="studentAEM">ΑΜ</string>
+    <string name="studentSemester">Εξάμηνο</string>
+    <string name="studentAtSemester">ο Εξάμηνο</string>
+    <string name="studentTotalSubjectsPassed"> περασμένα μαθήματα</string>
+    <string name="studentTotalEcts"> σύνολο βαθμών ECTS</string>
+    <string name="studentDetails">Στοιχεία φοιτητή</string>
+    <string name="studentDepartment">Τμήμα</string>
+    <string name="studentProgramStudies">Πρόγραμμα Σπουδών</string>
+    <string name="studentSpeciliasation">Ειδικότητα</string>
+    <string name="studentRegistrationYear">Έτος Εισαγωγής</string>
+    <string name="studentRegistrationWay">Τρόπος Εισαγωγής</string>
+
+
+
+    <!-- Profiles Strings -->
+
+    <string name="profileLoadTitle">Μεταφόρτωση προφίλ</string>
+    <string name="profileLoadMsg">Πρόκειται να μεταφορτώσετε πληροφορίες από το Ionio Gram Web,
+        αυτή η ενέργεια απαιτεί σύνδεση στο διαδίκτυο (προτείνεται η χρήση WiFi).\nΘέλετε να συνεχίσετε;</string>
+    <string name="screenNameText">Όνομα προφίλ (πχ Γιώργος)</string>
+    <string name="userNameText">Όνομα Χρήστη</string>
+    <string name="userNameValidation">Καταχωρήστε το Όνομα Χρήστη του λογαριασμού σας από το Ι.Π. χωρίς το \@ionio.gr, πχ p09dome</string>
+    <string name="passwordText">Κωδικός</string>
+    <string name="passwordValidation">Καταχωρήστε τον κωδικό του λογαριασμού σας από το Ιόνιο Πανεπιστήμιο, προσοχή με τους κεφαλαίους χαρακτήρες</string>
+    <string name="profileExistsTitle">Διπλότυπο</string>
+    <string name="profileExistsMsg">Υπάρχει ήδη ένα προφίλ για </string>
+    <string name="noProfileText">Απαιτείται ένας ενεργός λογαριασμός Ιονίου Πανεπιστημίου. Εφόσον έχετε, πατήστε επόμενο για να ξεκινήσετε.</string>
+    <string name="wrongCredentialsTitle">Λάθος Στοιχεία</string>
+    <string name="wrongCredentialsMsg">Καταχωρήσατε λάθος Όνομα Χρήστη ή Κωδικό.
+        Θυμηθείτε ότι το όνομα χρήστη δεν χρειάζεται το @ionio.gr</string>
+    <string name="deleteProfile">Διαγραφή προφίλ</string>
+    <string name="editProfile">Επεξεργασία Προφίλ</string>
+    <string name="setAsDefault">Ορισμός ως προεπιλογή</string>
+    <string name="profileDeleted">Το προφίλ διαγράφηκε επιτυχώς</string>
+    <string name="profileChanged">Το προφίλ ενημερώθηκε επιτυχώς</string>
+    <string name="profileCreated">Το προφίλ δημιουργήθηκε επιτυχώς</string>
+    <string name="defaultprofileChanged">ορίσθηκε ως προεπιλεγμένο</string>
+    <string name="deleteConfirmation">Επιθυμείτε διαγραφή του </string>
+    <string name="deleteConfirmationMsg">Επιβεβαίωση διαγραφής </string>
+
+
+    <!-- Grades Strings -->
+
+    <string name="detailsTitle">Λεπτομέρειες</string>
+    <string name="typeTitle">Τύπος μαθήματος:</string>
+    <string name="ExPeriodTitle">Εξεταστική περίοδος:</string>
+    <string name="MOTitle">ΜΟ:</string>
+    <string name="DMTitle">ΔΜ:</string>
+    <string name="TotalSubjectsPassed">περασμένα μαθήματα</string>
+    <string name="dmPoints">διδακτικές μονάδες</string>
+    <string name="ECTSpoints">μονάδες ECTS</string>
+    <string name="semesterAvg">ΜΟ Εξαμήνου:</string>
+    <string name="NoGradesGroup">Δεν υπάρχει καταχωρημένη βαθμολογία ακόμα. Ανανεώστε για τυχόν αλλαγές.</string>
+
+
+
+    <!-- Information  Strings -->
+
+    <string name="informationTitle">Πληροφορίες</string>
+    <string name="departmentName">Τμήμα Πληροφορικής</string>
+    <string name="departmentAddress"><b>Δ/νση:</b> Πλατεία Τσιριγώτη 7, 49100 Κέρκυρα</string>
+    <string name="departmentPhone"> <b>Τηλ:</b> +30 26610 87760 \n+30 26610 87761 \n+30 26610 87763</string>
+    <string name="departmentWebPage"><b>Ιστοσελίδα:</b> www.di.ionio.gr</string>
+    <string name="departmentStaff">Προσωπικό</string>
+    <string name="StaffName"><b>Όνομα:</b></string>
+    <string name="StaffAddress"><b>Δ/νση:</b></string>
+    <string name="StaffPhone"><b>Τηλ:</b></string>
+    <string name="StaffWebPage"><b>Ιστοσελίδα:</b></string>
+    <string name="depStaff">ΔΕΠ</string>
+    <string name="etepStaff">ΕΤΕΠ</string>
+    <string name="teachingStaff">Διδακτικό προσωπικό</string>
+
+
+    <!-- Applications Strings -->
+
+    <string name="studyCertificate">Πιστοποιητικό Σπουδών</string>
+    <string name="gradeCertificate">Πιστοποιητικό Βαθμολογίας</string>
+    <string name="otherCertificate">Άλλο πιστοποιητικό</string>
+    <string name="SubjectTitle">Θέμα</string>
+    <string name="copiesTitle">Αντίτυπα</string>
+    <string name="notesTitle">Πληκτρολογείστε πληροφορίες σχετικά με το θέμα σας</string>
+    <string name="somethingElseTitle">Πληκτρολογείστε το θέμα σας</string>
+    <string name="emptyFieldsTitle">Ελλειπή στοιχεία</string>
+    <string name="emptyFieldsMsg">Το \'Θέμα\' ή οι \'Σημειώσεις\' δεν μπορούν να είναι κενά.</string>
+    <string name="sendingApplication">Αποστολή αίτησης. . .</string>
+    <string name="successfullApplication">Η αίτηση απεστάλη επιτυχώς.</string>
+    <string name="pendingStudyCertificate">Ένα Πιστοποιητικό Σπουδών βρίσκεται ακόμα σε εκκρεμότητα.</string>
+    <string name="pendingGradeCertificate">Ένα πιστοποιητικό Αναλυτικής Βαθμολογίας βρίσκεται ακόμα σε εκκρεμότητα.</string>
+
+
+    <!-- Announcement Strings -->
+
+    <string name="noAnnouncements">Δεν υπάρχουν νέες ανακοινώσεις αυτή τη περίοδο. \nΕπιλέξτε το κουμπί ανανέωσης από επάνω δεξιά \nγια έλεγχο ανακοινώσεων</string>
+    <string name="loadingAnnouncements">Μεταφόρτωση ανακοινώσεων από www.ionio.gr</string>
+    <string name="Announcements">ανακοινώσεις</string>
+    <string name="SecreteriatAnnouncements">Ανακοινώσεις \nΓραμματείας</string>
+    <string name="GeneralAnnouncements">Γενικές \nΑνακοινώσεις</string>
+    <string name="annActions">Ενέργεια Ανακοίνωσης</string>
+    <string name="deleteAnnouncement">Διαγραφή (από την εφαρμογή)</string>
+    <string name="AnnouncementRemoved">Η ανακοίνωση αφαιρέθηκε από τη λίστα.</string>
+
+
+    <!-- Subscription Strings -->
+
+    <string name="code">Κωδ:</string>
+    <string name="type">Τύπος:</string>
+    <string name="semester">Εξάμηνο:</string>
+    <string name="hours">Ώρες:</string>
+    <string name="checkForSubscriptions">Έλεγχος για περίοδο δηλώσεων.</string>
+    <string name="openSubscriptionsPeriod">Η περίοδος δηλώσεων είναι ενεργή, θέλετε να μεταφερθείτε στις δηλώσεις σας;</string>
+    <string name="subscriptionChoices">Η περίοδος δηλώσεων είναι ενεργή, τι θέλετε να κάνετε;</string>
+    <string name="viewCurrentSubscriptionList">Τρέχουσα δήλωση</string>
+    <string name="newSubscriptionList">Νέα δήλωση</string>
+    <string name="closedSubscriptionsPeriod">Η περίοδος δηλώσεων δεν είναι ενεργή.</string>
+    <string name="alreadyInSubscriptionList">υπάρχει ήδη στη δήλωση</string>
+    <string name="tapSwitchToAdd">είναι διαθέσιμο για προσθήκη στην τρέχουσα δήλωση</string>
+    <string name="insertedInTheList">προστέθηκε στην τρέχουσα δήλωση</string>
+    <string name="removedFromTheList">αφαιρέθηκε από την τρέχουσα δήλωση</string>
+    <string name="subscriptionInstructions">Προσθέστε ή αφαιρέστε ένα μάθημα πατώντας το μπροστινό του διακόπτη.
+        \nΤα γκριζαρισμένα μαθήματα υπάρχουν ήδη στη δήλωση και δεν μπορούν να αφαιρεθούν.
+        \nΠατήστε επόμενο για υποβολή της δήλωσης.</string>
+    <string name="sendingSubscription">Αποστολή δήλωσης. . .</string>
+    <string name="subscriptionServiceNotAvailable">Η υποβολή της δήλωσης δεν είναι δυνατή είτε γιατί όλα τα τρέχοντα μαθήματα υπάρχουν ήδη στην δήλωση είτε γιατί δεν έχετε επιλέξει κάποιο μάθημα.
+        \nΠαρακαλώ, επισκεφθείτε το Ionio Gram Web για περισσότερα.</string>
+    <string name="successfullSubmission">Η τρέχουσα υποβολή δήλωσης ήταν επιτυχής. Για επιβεβαίωση και εκτύπωση της, επισκεφθείτε το Ionio Gram Web.</string>
+    <string name="unSuccessfullSubmission">Η υποβολή απέτυχε. Πιθανό πρόβλημα εξυπηρετητή.\nΔοκιμάστε ξανά αργότερα ή επισκεφθείτε το Ionio Gram Web.</string>
+
+    <!-- Home Drawer Strings -->
+    <string name="homeWelcome">Καλώς Ήλθατε</string>
+
+
+    <!-- Refresh Menu Items -->
+
+    <string name="Grades">Βαθμολογίες</string>
+    <string name="SemesterSubscriptions">Δήλωσεις</string>
+    <string name="Applications">Αιτήσεις</string>
+    <string name="DefaultProfile">Προφίλ</string>
+    <string name="announcements">Ανακοινώσεις</string>
+    <string name="refreshAll">Ανανέωση όλων \n(εκτός ανακοινώσεων)</string>
+    <string name="refreshSelection">Ανανεώσεις για το προφίλ</string>
+    <string name="refreshedSuccessfully">ανανεώθηκαν επιτυχώς</string>
+    <string name="refreshedSuccessfully2">ανανεώθηκε επιτυχώς</string>
+    <string name="oi">Οι </string>
+    <string name="to">Το</string>
+    <string name="refreshIsNeededTitle">Ανάγκη Ανανέωσης</string>
+    <string name="daysAway">Δεν έχετε συνδεθεί εδώ και</string>
+    <string name="days">μέρες</string>
+    <string name="since">από</string>
+    <string name="refreshNeededMsg">Προτείνεται η ανανέωση των πληροφοριών σας για το προφίλ</string>
+
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Header</item>
+        <item >Καρτέλα Σπουδαστή</item>
+        <item >Βαθμολογίες</item>
+        <item >Δηλώσεις</item>
+        <item >Αιτήσεις</item>
+        <item >Προφίλ</item>
+        <item >Πληροφορίες - Επικοινωνία</item>
+        <item >Δημιουργήστε πρώτα ένα προφίλ</item>
+    </string-array>
+
+
+
+</resources>

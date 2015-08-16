@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/header_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bg1" />
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/basic_card"
+        android:layout_below="@id/header_imageview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_department"
+                android:id="@+id/basic_card_icon"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/departmentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/departmentName"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/departmentAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/departmentAddress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/departmentName"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/departmentPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/departmentPhone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/departmentAddress"
+                android:gravity="center"
+                android:autoLink="phone" />
+            <TextView
+                android:id="@+id/departmentFax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/departmentFax"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/departmentPhone"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/departmentMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/departmentMail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/departmentFax"
+                android:gravity="center"
+                android:autoLink="email" />
+            <TextView
+                android:id="@+id/departmentWebPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/departmentWebPage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/departmentMail"
+                android:gravity="center"
+                android:autoLink="web" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ExpandableListView
+        android:id="@+id/listView"
+        android:layout_below="@id/basic_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ExpandableListView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <!--<color name="list_background_pressed">#992416</color>-->
+    <color name="list_background_pressed">#49796b</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="base_color">#83d0c9</color>
+    <color name="deactivated">#e5e6eb</color>
+    <color name="egram_green">#f222a022</color>
+    <color name="egram_green_transparent">#bf22a022</color>
+    <color name="egram_light_green">#b3ecec</color>
+    <color name="egram_turquoise">#40E0D0</color>
+    <color name="egram_turquoise_dark">#40a0D0</color>
+    <color name="egram_mint">#B4fEB4</color>
+</resources>

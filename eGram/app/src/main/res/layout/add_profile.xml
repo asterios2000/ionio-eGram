@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profileFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    <RelativeLayout
+            android:id="@+id/informations_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/header_imageview"
+            android:gravity="center"
+            android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/header_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/mat_bg" />
+    <!-- cheat code: negative margin -->
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/ic_contact_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:id="@+id/profileImageView" />
+
+
+        <EditText
+            android:id="@+id/profileScreenName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:singleLine="true"
+            android:hint="@string/screenNameText"
+            android:lines="1"
+            android:inputType="textPersonName"
+            android:editable="false"
+            android:digits="@string/acceptedProfileNameChars"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/profileImageView">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/profileUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:singleLine="true"
+            android:layout_below="@+id/profileScreenName"
+            android:hint="@string/userNameText"
+            android:inputType="text"
+            android:lines="1"
+            android:layout_centerInParent="true"
+            android:digits="@string/acceptedIonioUserNameChars"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/passText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:password="true"
+            android:singleLine="true"
+            android:layout_below="@+id/profileUserName"
+            android:hint="@string/passwordText"
+            android:layout_centerInParent="true"
+            android:lines="1"
+            android:inputType="textPassword" />
+
+
+    <com.melnykov.fab.FloatingActionButton
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/addProfileBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_done_white_48dp"
+        android:clickable="false"
+        android:cropToPadding="false"
+        fab:fab_colorNormal="#e5e6eb"
+        android:layout_below="@id/passText"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    </RelativeLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/picturePath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="1"
+        android:singleLine="true"
+        android:lines="1"
+        android:editable="false"
+        android:layout_below="@+id/scrollContainer"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

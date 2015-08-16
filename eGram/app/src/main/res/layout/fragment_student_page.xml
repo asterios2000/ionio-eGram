@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false">
+
+    <ImageView
+        android:id="@+id/header_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/mat_bg" />
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_imageview"
+            android:id="@+id/linearCards">
+
+        <!-- A CardView that contains a TextView -->
+
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/basic_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+             <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_student"
+                android:id="@+id/basic_card_icon"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/sp_semester"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="8ο Εξάμηνο "
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/sp_subjects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="47 Περασμένα Μαθήματα "
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/sp_semester"/>
+            <TextView
+                android:id="@+id/sp_ECTS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="15 Μονάδες ECTS "
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/sp_subjects"/>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/updates_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_below="@+id/basic_card">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_announcement"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/announcement_card_icon" />
+
+                <TextView
+                    android:id="@+id/sp_updates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="@string/Announcements"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:gravity="center"
+                    android:enabled="true"
+                    android:layout_toRightOf="@+id/announcement_card_icon" />
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+    <!-- cheat code: negative margin -->
+    <ImageView
+        android:id="@+id/sp_profileImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_profile"
+        android:layout_alignBottom="@+id/header_imageview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="3dp"/>
+    <TextView
+        android:id="@+id/sp_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Κομερτζόγλου Αστέριος"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/sp_profileImage"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:autoText="false"
+        android:clickable="false" />
+    <TextView
+        android:id="@+id/sp_ΑΕΜ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Π2011059"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sp_fullname"
+        android:gravity="center"
+        android:layout_alignLeft="@id/sp_fullname"
+        android:layout_alignRight="@id/sp_fullname"
+        android:layout_alignBottom="@+id/sp_profileImage"
+        />
+
+    <com.melnykov.fab.FloatingActionButton
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_more"
+        android:clickable="true"
+        android:cropToPadding="false"
+        fab:fab_colorNormal="#83d0c9"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp" />
+
+
+</RelativeLayout>

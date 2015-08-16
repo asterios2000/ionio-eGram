@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/header_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/mat_bg" />
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/basic_card"
+        android:layout_below="@id/header_imageview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/studentDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/studentDetails"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#f122a022" />
+
+            <TextView
+                android:id="@+id/stFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Asterios Komertzoglou"
+                android:layout_below="@+id/studentDetails"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/stAEMSemester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Π2011063 - 8ο Εξάμηνο"
+                android:layout_below="@+id/stFullName"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/stDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="ΤΜΗΜΑ ΠΛΗΡΟΦΟΡΙΚΗΣ"
+                android:layout_below="@+id/stAEMSemester"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/stSpecialisation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="ΠΛΗΡΟΦΟΡΙΚΗ - ΑΝΘΡΩΠΙΣΤΙΚΕΣ ΚΑΙ ΚΟΙΝΩΝΙΚΕΣ ΕΠΙΣΤΗΜΕΣ"
+                android:layout_below="@+id/stDepartment"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/stRegistrationWayYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="ΚΑΤΑΤΑΚΤΗΡΙΕΣ ΕΞΕΤΑΣΕΙΣ 2011 - 2012"
+                android:layout_below="@+id/stSpecialisation"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/stPrSpoudon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="ΠΡΟΓΡΑΜΜΑ ΣΠΟΥΔΩΝ 2004 - 14"
+                android:layout_below="@+id/stRegistrationWayYear"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ExpandableListView
+        android:id="@+id/listView"
+        android:layout_below="@id/basic_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ExpandableListView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_student"
+        android:id="@+id/basic_card_icon"
+        android:layout_above="@+id/basic_card"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

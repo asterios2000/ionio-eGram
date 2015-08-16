@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">e-Gram</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="drawer_open" translatable="false">Slider Menu Opened</string>
+    <string name="drawer_close" translatable="false">Slider Menu Closed</string>
+
+
+    <!-- Network Strings -->
+
+    <string name="serverDownTitle">Unreachable Server</string>
+    <string name="serverDownMsg">Ionian University\'s Gram Web Server is down, please try again later</string>
+
+    <!-- General Strings -->
+
+    <string name="loadingMessage">Downloading Student Details from Ionian University</string>
+    <string name="loading">Loading\.\.\.</string>
+    <string name="cancel">Cancel</string>
+    <string name="noNetworkTitle">Unavailable Internet Connection</string>
+    <string name="noNetworkMsg">It seems that you are not connected neither to a Wifi of 3G network.
+        This operation cannot be completed</string>
+    <string name="youHave">You have</string>
+    <string name="and">and</string>
+    <string name="informationTitle">Information</string> <!--Plirofories  -->
+    <string name="button_label_on" translatable="false">\u2713</string>
+
+
+    <!-- Student Page Strings -->
+
+    <string name="studentName">Name</string>
+    <string name="studentSurname">Surname</string>
+    <string name="studentUsername">User Name</string>
+    <string name="studentAEM">ID</string> <!--AM:-->
+    <string name="studentSemester">Semester</string>
+    <string name="studentAtSemester">th Semester</string><!-- ο Εξάμηνο -->
+    <string name="studentTotalSubjectsPassed"> total subjects passed</string><!-- περασμένα μαθήματα -->
+    <string name="studentTotalEcts"> total ECTS points</string><!-- περασμένα μαθήματα -->
+    <string name="studentDetails">Student Details</string><!-- Stoixeia foititi -->
+    <string name="studentDepartment">Department</string><!-- Stoixeia foititi -->
+    <string name="studentProgramStudies">Program of Studies</string><!-- Programma Spoudon -->
+    <string name="studentSpeciliasation">Specialisation</string><!-- Eidikotita -->
+    <string name="studentRegistrationYear">Year of registration</string><!-- Etos Eisagogis -->
+    <string name="studentRegistrationWay">Way of registration</string><!-- Tropos Eisagogis -->
+
+
+
+
+
+    <!-- Profiles Strings -->
+
+    <string name="profileLoadTitle">Download Profile</string>
+    <string name="profileLoadMsg">You are about to download all your data from Ionio Gram Web,
+        this action requires internet connection, it is suggested to use your WiFi connection. Proceed?</string>
+    <string name="acceptedProfileNameChars" translatable="false">abcdefghijklmnopqrstuvwxywABCDEFGHIJKLMNOPQRSTUVWXYZαβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩςάέόίύήώ</string>
+    <string name="acceptedIonioUserNameChars" translatable="false">abcdefghijklmnopqrstuvwxywABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+    <string name="screenNameText">Profile Name (e.g.George)</string>
+    <string name="userNameText">Ionian User Name</string>
+    <string name="userNameValidation">Type the user name of your Ionian university account without the \@ionio.gr</string>
+    <string name="passwordText">Ionian Password</string>
+    <string name="passwordValidation">Type the password of your Ionian university account, be careful with capital letters</string>
+    <string name="profileExistsTitle">Duplicate Warning</string>
+    <string name="profileExistsMsg">There is already a profile for </string>
+    <string name="noProfileText">You need a valid profile with Ionian University\'s credentials, tap next to create one now</string>
+    <string name="wrongCredentialsTitle">False Credentials</string>
+    <string name="wrongCredentialsMsg">You\'ve entered wrong Username or Password.
+        Remember that your Username has to be something like \'p09dome\' without the @ionio.gr</string>
+    <string name="email" translatable="false">\@ionio.gr</string>
+    <string name="deleteProfile">Delete profile</string>
+    <string name="editProfile">Edit profile</string>
+    <string name="setAsDefault">Set as default</string>
+    <string name="profileDeleted">Profile deleted successfully</string>
+    <string name="profileChanged">Profile changed successfully</string>
+    <string name="profileCreated">Profile created successfully</string>
+    <string name="defaultprofileChanged">set as default</string>
+    <string name="deleteConfirmation">Do you really want to delete profile </string>
+    <string name="deleteConfirmationMsg">Delete Confirmation</string>
+
+
+    <!-- Grades Strings -->
+
+    <string name="detailsTitle">Details</string>
+    <string name="typeTitle">Subject\'s Type:</string>
+    <string name="ExPeriodTitle">Examination Period:</string>
+    <string name="MOTitle">Avg:</string> <!--MO-->
+    <string name="DMTitle">SP:</string> <!--ΔΜ-->
+    <string name="ECTSTitle" translatable="false">ECTS:</string> <!--ΔΜ-->
+    <string name="TotalSubjectsPassed">total subjects passed</string> <!--περασμένα μαθήματα-->
+    <string name="dmPoints">total student points</string> <!--Διδακτικές μονάδες-->
+    <string name="ECTSpoints">total ECTS points</string> <!--ECTS-->
+    <string name="semesterAvg">Semester\'s Average:</string> <!--Μέσος ΄Ορος-->
+    <string name="NoGradesGroup">No semester grades. Refresh for changes</string> <!--Δεν υπάρχει καταχωρημένη βαθμολογία. Ανανεώστε για τυχόν αλλαγές-->
+
+
+
+    <!-- Information  Strings -->
+
+    <string name="departmentName">Informatics Department</string>
+    <string name="departmentAddress"><b>Address:</b> 7 Tsirigoti Square, 49100 Corfu</string>
+    <string name="departmentPhone"> <b>Phone:</b> +30 26610 87760 \n+30 26610 87761 \n+30 26610 87763</string>
+    <string name="departmentFax" translatable="false"><b>Fax:</b> +30 26610 87766</string>
+    <string name="departmentMail" translatable="false"><b>e-mail:</b> cs@ionio.gr</string>
+    <string name="departmentWebPage"><b>Web Page:</b> www.di.ionio.gr</string>
+    <string name="departmentStaff">Staff</string>
+    <string name="StaffName"><b>Name:</b></string>
+    <string name="StaffAddress"><b>Address:</b></string>
+    <string name="StaffPhone"><b>Phone:</b></string>
+    <string name="StaffFax" translatable="false"><b>Fax:</b></string>
+    <string name="StaffMail" translatable="false"><b>e-mail:</b></string>
+    <string name="StaffWebPage"><b>WebPage:</b></string>
+    <string name="depStaff">Faculty Staff</string>
+    <string name="etepStaff">Technical Staff</string>
+    <string name="teachingStaff">Teaching Staff</string>
+
+
+    <!-- Applications Strings -->
+
+    <string name="studyCertificate">Certificate of Studies</string>
+    <string name="gradeCertificate">Grades Certificate</string>
+    <string name="otherCertificate">Other Certificate</string>
+    <string name="SubjectTitle">Subject</string>
+    <string name="copiesTitle">No of Copies</string>
+    <string name="notesTitle">Type details about your request</string>
+    <string name="somethingElseTitle">Type your subject here</string>
+    <string name="emptyFieldsTitle">Missing Data</string>
+    <string name="emptyFieldsMsg">Neither of \'Subject\' or \'Notes\' can be empty. Please fill them in</string>
+    <string name="acceptedChars" translatable="false">()!;?:.,-/@abcdefghijklmnopqrstuvwxywABCDEFGHIJKLMNOPQRSTUVWXYZαβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩςάέόίύήώ0123456789\' \'</string>
+    <string name="sendingApplication">Sending Application. . .</string>
+    <string name="successfullApplication">Your application sent successfully.</string>
+    <string name="pendingStudyCertificate">You already have a Study Certificate pending.</string>
+    <string name="pendingGradeCertificate">You already have a Grades Certificate pending.</string>
+
+
+    <!-- Announcement Strings -->
+
+    <string name="noAnnouncements">There aren\'t any new \n announcements at the moment. \n Tap refresh button on the top to fetch \n all announcements</string>
+    <string name="loadingAnnouncements">Downloading all announcements from www.ionio.gr</string>
+    <string name="Announcements">announcements</string>
+    <string name="SecreteriatAnnouncements">Secreteriat \nAnnouncements</string>
+    <string name="GeneralAnnouncements">General \nAnnouncements</string>
+    <string name="annActions">Announcement Action</string>
+    <string name="deleteAnnouncement">Delete (from app)</string>
+    <string name="AnnouncementRemoved">Announcement removed from list</string>
+
+
+    <!-- Subscription Strings -->
+
+    <string name="code">Code:</string>
+    <string name="type">Type:</string>
+    <string name="semester">Semester:</string>
+    <string name="hours">Hours:</string>
+    <string name="checkForSubscriptions">Checking if it\'s Subscription\'s period</string>
+    <string name="openSubscriptionsPeriod">The Subscriptions Period is open, would you like to be transfered to your subscriptions?</string>
+    <string name="subscriptionChoices">The Subscriptions Period is open, what would you like to do?</string>
+    <string name="viewCurrentSubscriptionList">Current subscription list</string>
+    <string name="newSubscriptionList">New subscription</string>
+    <string name="closedSubscriptionsPeriod">Subscriptions Period is off</string>
+    <string name="alreadyInSubscriptionList">is already in the subscription list by default</string>
+    <string name="tapSwitchToAdd">is available for addition in your current Subscription</string>
+    <string name="insertedInTheList">included in your current subscription list</string>
+    <string name="removedFromTheList">excluded from your current subscription list</string>
+    <string name="subscriptionInstructions">You can add or remove a subject by tapping the switch in front.
+        \nGrayed rows are already included in your subscription and cannot be removed.
+        \nTap next arrow to submit your subscription.</string>
+    <string name="sendingSubscription">Sending Subscription. . .</string>
+    <string name="subscriptionServiceNotAvailable">Subscription submission is not possible because all current subjects are already inserted, or nothing is selected.
+        \nPlease, visit Ionio Gram Web site for more.</string>
+    <string name="successfullSubmission">Your current semester submission was successful.</string>
+    <string name="unSuccessfullSubmission">Your submission failed. Possible server error.\nTry again later or visit Ionio Gram Web site</string>
+
+
+
+    <!-- Home Drawer Strings -->
+    <string name="homeWelcome">Welcome</string>
+
+
+    <!-- Refresh Menu Items -->
+
+    <string name="Grades">Grades</string>
+    <string name="SemesterSubscriptions">Semester Subscriptions</string>
+    <string name="Applications">Applications</string>
+    <string name="DefaultProfile">Profile</string>
+    <string name="announcements">Announcements</string>
+    <string name="refreshAll">Refresh All \n(except announcements)</string>
+    <string name="refreshSelection">Choose Refresh Action for Profile</string>
+    <string name="refreshedSuccessfully">refreshed successfully</string>
+    <string name="refreshIsNeededTitle">Refresh Need</string>
+    <string name="daysAway">You haven\'t logged for</string>
+    <string name="days">days</string>
+    <string name="since">since</string>
+    <string name="refreshNeededMsg">It is suggested to refresh your information for profile</string>
+
+    <string-array name="refresh_items">
+        <item >@string/DefaultProfile</item>        <!--0-->
+        <item >@string/Grades</item>                <!--1-->
+        <item >@string/announcements</item>         <!--2-->
+        <item >@string/SemesterSubscriptions</item> <!--3-->
+        <item >@string/Applications</item>          <!--4-->
+        <item >@string/refreshAll</item>            <!--5-->
+
+
+    </string-array>
+    
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Header</item>
+        <item >Student Page</item>
+        <item >Grades</item>
+        <item >Semester Subscriptions</item>
+        <item >Applications</item>
+        <item >Profiles</item>
+        <item >Information - Communication</item>
+        <item >Create profile first</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_drawer</item> <!--this is for the drawer's header that takes 0 place in the drawer -->
+        <item>@drawable/ic_student</item>
+        <item>@drawable/ic_grades</item>
+        <item>@drawable/ic_subscriptions</item>
+        <item>@drawable/ic_applications</item>
+        <item>@drawable/ic_profiles</item>
+        <item>@drawable/ic_information</item>
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon" translatable="false">Item Icon</string>
+
+</resources>
